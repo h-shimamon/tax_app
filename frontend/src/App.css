@@ -1,0 +1,125 @@
+/* --- 全体のコンテナ --- */
+.app-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  color: #333; /* ← 全体の文字色の基本を濃いグレーに設定 */
+}
+
+h1, h2 {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* --- 新規顧客追加フォーム --- */
+.form-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-container button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* --- 顧客一覧 --- */
+.customer-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.customer-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-list li.selected {
+  background-color: #e7f3ff;
+  border-color: #007bff;
+}
+
+.customer-list li span {
+  color: #333; /* 文字の色を濃いグレーに指定 */
+}
+
+/* --- 各種ボタン --- */
+.customer-list li > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.delete-btn, .edit-btn, .save-btn {
+  padding: 0.4rem 0.8rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-btn { background-color: #dc3545; }
+.delete-btn:hover { background-color: #c82333; }
+
+.edit-btn { background-color: #28a745; }
+.edit-btn:hover { background-color: #218838; }
+
+.save-btn { background-color: #007bff; }
+.save-btn:hover { background-color: #0056b3; }
+
+/* --- タスク一覧 --- */
+.task-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-container li {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  color: #333; /* 文字の色を濃いグレーに指定 */
+}
+
+.task-container li:last-child {
+  border-bottom: none;
+}
